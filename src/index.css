@@ -8,11 +8,5 @@ body {
 }
 
 .btn {
-  background-color: skyblue;
-  padding: 10px 15px;
-  margin: 10px 0;
-  display: inline-block;
-  color: white;
-  border-radius: 5px;
-  border: 2px solid skyblue;
+  @apply bg-sky-800 px-2 py-3 my-2.5 mx-0 inline-block text-white rounded-md border-2 border-sky-800;
 }
