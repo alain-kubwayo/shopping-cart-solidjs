@@ -1,21 +1,17 @@
-import styles from './App.module.css';
+import banner from './assets/banner.webp';
+import Card from './components/Card';
 
 function App() {
   return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
+    <div>
+      <header>
+        <h1>Alain's Shop</h1>
       </header>
+      <img src={banner} alt="site banner" />
+
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }
