@@ -39,7 +39,7 @@ const Card = (props) => {
         setPerson({
             name: {
                 first: "Alain",
-                last: "Imanishimwe"
+                last: "Ishimwe"
             },
             age: 27
         })

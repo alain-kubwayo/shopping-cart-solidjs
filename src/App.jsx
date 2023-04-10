@@ -7,9 +7,9 @@ function App() {
       <header>
         <h1>Alain's Shop</h1>
       </header>
-      <img class="rounded-md" src={banner} alt="site banner" />
+      <div class="h-32 bg-[url('./assets/banner.webp')] bg-cover bg-center">
+      </div>
       <div class="grid grid-cols-4 gap-10 my-4">
-        {/* <Card /> */}
         <Card rounded={true} flat={false}>
           <h2>T-shirt - Black</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam saepe odio iure, tempora molestiae modi?</p>
