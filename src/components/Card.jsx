@@ -45,6 +45,12 @@ const Card = (props) => {
         })
     }, 3000)
 
+    // event handlers
+    const changeName = (name) => {
+        setName(name);
+        // setName('Aline');
+    }
+
     return ( 
         <div 
             class="bg-white p-4 text-center"
@@ -60,6 +66,15 @@ const Card = (props) => {
             <p>The age is {age()}</p>
             <p>My name is {person().name.first} {person().name.last} and age is {person().age}</p>
             { props.children }
+            {/* Event handlers */}
+            <button onClick={() => changeName('Aline')}>Change the name</button>
+            <input 
+                type="text" 
+                onInput={(e) => setName(e.target.value)}
+                value={name()}
+                class="border border-sky-900"
+                placeholder="Enter new name"
+            />
         </div>
     );
 }
