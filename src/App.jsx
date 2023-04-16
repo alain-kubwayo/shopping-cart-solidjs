@@ -1,6 +1,7 @@
 import { createSignal } from 'solid-js';
 import banner from './assets/banner.webp';
-import Card from './components/Card';
+import { Routes, Route } from '@solidjs/router';
+import Home from './pages/Home';
 
 function App() {
   const [darkTheme, setDarkTheme] = createSignal(false);
@@ -25,19 +26,9 @@ function App() {
       </header>
       <div class="h-32 bg-[url('./assets/banner.webp')] bg-cover bg-center">
       </div>
-      <div class="grid grid-cols-4 gap-10 my-4">
-        <Card rounded={true} flat={false}>
-          <h2>T-shirt - Black</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam saepe odio iure, tempora molestiae modi?</p>
-          <button class="btn">View</button>
-        </Card>
-        <Card rounded={false} flat={true}>
-          <h2>Hoodie - White</h2>
-          <button class="btn">View</button>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam saepe odio iure, tempora molestiae modi?</p>
-          <p>Only $10</p>
-        </Card>
-      </div>
+      <Routes>
+        <Route path="/" component={<Home />} />
+      </Routes>
     </div>
   );
 }
