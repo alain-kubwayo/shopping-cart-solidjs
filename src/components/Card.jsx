@@ -61,20 +61,20 @@ const Card = (props) => {
                 }
             }
         >
-            <p>My name is {name()}</p>
+            {/* <p>My name is {name()}</p>
             <p>The boolean is {bool().toString()}</p>
             <p>The age is {age()}</p>
-            <p>My name is {person().name.first} {person().name.last} and age is {person().age}</p>
+            <p>My name is {person().name.first} {person().name.last} and age is {person().age}</p> */}
             { props.children }
             {/* Event handlers */}
-            <button onClick={() => changeName('Aline')}>Change the name</button>
+            {/* <button onClick={() => changeName('Aline')}>Change the name</button>
             <input 
                 type="text" 
                 onInput={(e) => setName(e.target.value)}
                 value={name()}
                 class="border border-sky-900"
                 placeholder="Enter new name"
-            />
+            /> */}
         </div>
     );
 }
