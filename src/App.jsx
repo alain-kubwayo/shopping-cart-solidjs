@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js';
 import banner from './assets/banner.webp';
-import { Routes, Route } from '@solidjs/router';
+import { Routes, Route, A } from '@solidjs/router';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 
@@ -24,6 +24,8 @@ function App() {
             "text-white": darkTheme()
           }}
         >Alain's Shop</h1>
+        <A href="/">Home</A>
+        <A href="/cart">Cart</A>
       </header>
       <div class="h-32 bg-[url('./assets/banner.webp')] bg-cover bg-center">
       </div>
